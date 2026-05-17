@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base:    #1C1228;
+  --bg-surface: #2D1F3A;
+  --bg-raised:  #3A2849;
+  --border:     rgba(245,69,160,0.14);
+  --pink:       #F545A0;
+  --pink-dim:   rgba(245,69,160,0.15);
+  --text:       #F0E8F8;
+  --text-muted: rgba(200,170,220,0.65);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg-base);
+  color: var(--text);
+}
+
+/* Kart bileşeni */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(245,69,160,0.25); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(245,69,160,0.45); }
+
+/* Input global geçersiz kılma */
+input::placeholder { color: rgba(180,150,210,0.35); }
+input:focus { outline: none; }
+
+/* Recharts tooltip */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background: #2D1F3A !important;
+  border: 1px solid rgba(245,69,160,0.25) !important;
+  border-radius: 10px !important;
+  color: #F0E8F8 !important;
+}
+
+/* Tailwind override - dark surfaces */
+.bg-\[\#2D1F3A\] { background-color: #2D1F3A; }

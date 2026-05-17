@@ -1,0 +1,14 @@
+target/
+*.class
+*.jar
+.mvn/
+.idea/
+*.iml
+.vscode/
+node_modules/
+build/
+dist/
+.env
+.DS_Store
+Thumbs.db
+*.log

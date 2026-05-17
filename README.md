@@ -1,0 +1,1 @@
+# Akilli Bina Sistemi
